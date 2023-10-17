@@ -79,6 +79,9 @@ a, .title,.title-text{
     color: rgb(255, 255, 255);
     background-color: rgba(228, 228, 119, 0.979);
 }
+.iteam :hover{
+    opacity: 0.5;
+}
 .list,.iteam{
     display: flex;
     
@@ -87,7 +90,6 @@ a, .title,.title-text{
     flex-wrap:wrap;
 }
 img ,.iteam  {
-   
     border-radius: 6px;
     margin-bottom: 10px;
 }
@@ -98,10 +100,9 @@ img{
 h4{
     font-size: 13px;
     color: #44e2ff;
-    text-align: center;
-
-    
+    text-align: center;  
 }
+
 .iteam{
     font-size: 13px;
     font-weight: bold;
@@ -111,6 +112,12 @@ h4{
     border: 1px solid white;
     width: calc(100%/5);   
 }
+.iteam img {
+    width: 100%; /* Đảm bảo rằng ảnh sẽ đầy đủ chiều rộng của phần tử cha */
+    height: auto; /* Để giữ tỷ lệ khung hình khi thay đổi kích thước */
+    max-height: 397px; /* Đặt chiều cao tối đa cho ảnh, bạn có thể điều chỉnh giá trị này theo nhu cầu của bạn */
+}
+
 .title-mid {
     width: auto;
     display: flex;
