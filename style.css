@@ -53,9 +53,10 @@ a, .title,.title-text{
 .main-container-list{
     max-width: 80%; 
     display: flex;
-    flex-wrap: wrap;
-
-    
+    flex-wrap: wrap;  
+}
+.list a {
+    width: 100%;
 }
 .title-text,.tab{
    margin-top:5px;
