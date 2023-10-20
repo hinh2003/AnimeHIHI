@@ -1,3 +1,4 @@
+
 body {
     color: #ffffff;
     background-color: #2c2c2c;
@@ -79,7 +80,7 @@ a, .title,.title-text{
     color: rgb(255, 255, 255);
     background-color: rgba(228, 228, 119, 0.979);
 }
-.iteam :hover{
+.list :hover{
     opacity: 0.5;
 }
 .list,.iteam{
@@ -89,9 +90,11 @@ a, .title,.title-text{
 .list ,.iteam{
     flex-wrap:wrap;
 }
+
 img ,.iteam  {
     border-radius: 6px;
     margin-bottom: 10px;
+   
 }
 
 img{
@@ -109,15 +112,16 @@ h4{
     margin-top: 8px;
     padding: 10px 10px;
     justify-content: center;
-    border: 1px solid white;
-    width: calc(100%/5);   
+    width: calc(100%/5);    
+
 }
-.iteam img {
-    width: 100%; /* Đảm bảo rằng ảnh sẽ đầy đủ chiều rộng của phần tử cha */
-    height: auto; /* Để giữ tỷ lệ khung hình khi thay đổi kích thước */
-    max-height: 397px; /* Đặt chiều cao tối đa cho ảnh, bạn có thể điều chỉnh giá trị này theo nhu cầu của bạn */
+.list{
+    
 }
 
+.title-mid ,.main-container-title{
+    margin-left: 10px ;
+}
 .title-mid {
     width: auto;
     display: flex;
@@ -239,7 +243,7 @@ h4{
     }
     
 }
-@media only screen and (max-width :450px) {
+@media only screen and (max-width :480px) {
     .nav-link{
         font-size: 16px;
     }
